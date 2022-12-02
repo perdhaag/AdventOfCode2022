@@ -15,7 +15,6 @@ const fetchInput = async (dayNumber: number) => {
     }
   );
   const data = trim(content.data);
-  //console.log(content.data.toString());
   fs.writeFileSync(
     path.resolve(__dirname, `../day${dayNumber}/input.txt`),
     data
